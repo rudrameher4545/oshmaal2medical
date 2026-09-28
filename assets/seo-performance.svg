@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-label="Search visibility infographic">
+<defs><filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#002f34" flood-opacity=".2"/></filter></defs>
+<circle cx="380" cy="280" r="250" fill="#c7e5de"/>
+<g filter="url(#s)" transform="translate(115 65) rotate(-2 265 205)">
+ <rect width="530" height="410" rx="14" fill="#fff"/>
+ <rect x="30" y="30" width="470" height="54" rx="27" fill="#fff" stroke="#dce5e3" stroke-width="2"/>
+ <circle cx="62" cy="57" r="10" fill="none" stroke="#557373" stroke-width="3"/><path d="M70 65l9 9" stroke="#557373" stroke-width="3"/>
+ <text x="94" y="63" font-size="16" font-weight="700" fill="#0a4c52" font-family="Arial">family doctor near me</text>
+ <rect x="30" y="108" width="470" height="104" rx="9" fill="#fff" stroke="#e2e9e7"/>
+ <circle cx="72" cy="154" r="28" fill="#064b50"/><text x="56" y="160" font-size="12" font-weight="700" fill="#fff" font-family="Arial">W+</text>
+ <text x="116" y="143" font-size="18" font-weight="700" fill="#073f46" font-family="Arial">Willow Health Clinic</text>
+ <text x="116" y="166" font-size="12" fill="#6b8281" font-family="Arial">Primary care • Same-week visits</text>
+ <text x="116" y="190" font-size="12" fill="#ff7758" font-family="Arial">★★★★★  <tspan fill="#6b8281">4.9 (186)</tspan></text>
+ <g opacity=".7"><rect x="30" y="228" width="470" height="78" rx="9" fill="#fff" stroke="#e2e9e7"/><circle cx="70" cy="267" r="24" fill="#eef3f2"/><rect x="110" y="250" width="180" height="12" rx="6" fill="#edf2f1"/><rect x="110" y="273" width="250" height="9" rx="4.5" fill="#f0f3f2"/></g>
+ <g opacity=".4"><rect x="30" y="322" width="470" height="58" rx="9" fill="#fff" stroke="#e2e9e7"/><circle cx="67" cy="351" r="19" fill="#eef3f2"/><rect x="102" y="340" width="210" height="10" rx="5" fill="#edf2f1"/></g>
+</g>
+<g transform="translate(78 400)" filter="url(#s)"><rect width="210" height="80" rx="8" fill="#ff7758"/><text x="22" y="38" font-size="31" font-weight="700" fill="#063f45" font-family="Arial">#1</text><text x="75" y="34" font-size="13" font-weight="700" fill="#063f45" font-family="Arial">Local search</text><text x="75" y="52" font-size="13" font-weight="700" fill="#063f45" font-family="Arial">visibility</text></g>
+<g transform="translate(540 400)" filter="url(#s)"><rect width="160" height="86" rx="10" fill="#064b50"/><text x="22" y="33" font-size="11" fill="#a9d5cf" font-family="Arial">Organic traffic</text><text x="22" y="65" font-size="28" font-weight="700" fill="#fff" font-family="Arial">+68%</text></g>
+</svg>
