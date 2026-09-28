@@ -37,30 +37,36 @@ features.forEach((item,index)=>{
     item.classList.add('active');
     item.querySelector('.plus').textContent='−';
     visual.dataset.panel=String(index);
-    const card=visual.querySelector('.search-card');
+    const image=visual.querySelector('.seo-generated-img');
     const pill=visual.querySelector('.rank-pill');
-    const rotations=[-2,1.4,-1,2.2,-2.8];
     const labels=['#1','CMS','BLOG','UX','BOOK'];
     const sub=['Local search visibility','Easy content updates','Patient education','Modern responsive design','Appointment conversion'];
-    card.style.transform='rotate('+rotations[index]+'deg) translateY(-5px)';
-    pill.firstChild.textContent=labels[index]+' ';
-    pill.querySelector('span').textContent=sub[index];
-    window.setTimeout(()=>card.style.transform='rotate('+rotations[index]+'deg)',240);
+    if(image){
+      const rotations=[-.5,.8,-.7,.9,-1];
+      image.style.transform='translateY(-8px) rotate('+rotations[index]+'deg) scale(1.015)';
+      setTimeout(()=>image.style.transform='',320);
+    }
+    if(pill){
+      pill.firstChild.textContent=labels[index]+' ';
+      pill.querySelector('span').textContent=sub[index];
+    }
   });
 });
 
 const art=document.querySelector('.hero-art');
 if(art && matchMedia('(pointer:fine)').matches){
+  const image=art.querySelector('.hero-generated-img');
+  const halos=[...art.querySelectorAll('.hero-image-halo')];
   art.addEventListener('mousemove',e=>{
     const r=art.getBoundingClientRect();
     const x=(e.clientX-r.left)/r.width-.5;
     const y=(e.clientY-r.top)/r.height-.5;
-    art.querySelector('.orbit-a').style.transform='translate('+(x*12)+'px,'+(y*12)+'px)';
-    art.querySelector('.orbit-b').style.transform='translate('+(x*-9)+'px,'+(y*-9)+'px)';
+    if(image) image.style.transform='translate('+(x*8)+'px,'+(y*8)+'px) rotate('+(x*.6)+'deg)';
+    halos.forEach((h,i)=>h.style.transform='translate('+(x*(i? -12:15))+'px,'+(y*(i? -12:15))+'px)');
   });
   art.addEventListener('mouseleave',()=>{
-    art.querySelector('.orbit-a').style.transform='';
-    art.querySelector('.orbit-b').style.transform='';
+    if(image) image.style.transform='';
+    halos.forEach(h=>h.style.transform='');
   });
 }
 
